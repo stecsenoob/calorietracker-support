@@ -3,40 +3,188 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CalorieTracker Account Deletion</title>
+  <meta name="description" content="Account and data deletion instructions for the CalorieTracker app.">
+  <title>CalorieTracker Account and Data Deletion</title>
+
+  <style>
+    body {
+      max-width: 850px;
+      margin: 0 auto;
+      padding: 24px;
+      font-family: Arial, Helvetica, sans-serif;
+      line-height: 1.65;
+      color: #1f1f1f;
+      background: #ffffff;
+    }
+
+    h1, h2 {
+      color: #111111;
+    }
+
+    h2 {
+      margin-top: 32px;
+      margin-bottom: 10px;
+    }
+
+    a {
+      color: #7B1FA2;
+    }
+
+    .updated {
+      color: #666666;
+    }
+
+    .box {
+      padding: 16px;
+      border-left: 4px solid #7B1FA2;
+      background: #F5EFFB;
+      border-radius: 8px;
+    }
+
+    .warning {
+      padding: 14px;
+      background: #FFF8E1;
+      border-radius: 8px;
+    }
+  </style>
 </head>
+
 <body>
-  <h1>CalorieTracker Account Deletion</h1>
+  <h1>CalorieTracker Account and Data Deletion</h1>
 
-  <p>
-    If you want to delete your CalorieTracker account and associated data,
-    please send an email to:
-    <strong>support.calorietracker@gmail.com</strong>
+  <p class="updated">
+    <strong>Last updated:</strong> July 19, 2026
   </p>
 
   <p>
-    Use the subject: <strong>Delete CalorieTracker Account</strong>
+    CalorieTracker is developed by <strong>Leon Jadrovski</strong>.
+    Users can delete their CalorieTracker account and associated data
+    directly inside the app or submit a deletion request by email.
+  </p>
+
+  <h2>Delete Your Account Inside the App</h2>
+
+  <div class="box">
+    <ol>
+      <li>Open <strong>CalorieTracker</strong>.</li>
+      <li>Open the <strong>More</strong> section.</li>
+      <li>Select <strong>Delete account</strong>.</li>
+      <li>Confirm the deletion.</li>
+    </ol>
+  </div>
+
+  <p>
+    Deleting your account inside the app permanently deletes your
+    CalorieTracker Firebase Authentication account and removes
+    CalorieTracker data stored locally on that device, including meal
+    entries, favorite foods, and manually added foods.
   </p>
 
   <p>
-    Please include the email address used for your CalorieTracker account.
+    Deleting a CalorieTracker account does not delete your separate
+    Google account.
   </p>
 
-  <h2>Data that will be deleted</h2>
+  <h2>Request Account Deletion Outside the App</h2>
+
+  <p>
+    If you cannot access CalorieTracker, send an email to:
+  </p>
+
+  <p>
+    <a href="mailto:support.calorietracker@gmail.com?subject=Delete%20CalorieTracker%20Account">
+      <strong>support.calorietracker@gmail.com</strong>
+    </a>
+  </p>
+
+  <p>
+    Use the subject:
+    <strong>Delete CalorieTracker Account</strong>
+  </p>
+
+  <p>
+    Include the email address associated with your CalorieTracker
+    account. Do not send your password. We may request reasonable
+    verification to prevent unauthorized account deletion.
+  </p>
+
+  <p>
+    Valid deletion requests are normally processed within 30 days
+    after we receive enough information to identify the account.
+  </p>
+
+  <h2>Data Deleted After an Account Deletion Request</h2>
+
   <ul>
-    <li>Your account email</li>
-    <li>Your Firebase Authentication account</li>
-    <li>Saved app data associated with your account, if stored on our services</li>
+    <li>The Firebase Authentication account used for CalorieTracker.</li>
+    <li>The account email and Firebase user ID associated with CalorieTracker.</li>
+    <li>Any CalorieTracker account data stored on systems controlled by the developer.</li>
   </ul>
 
-  <h2>Data that may be retained</h2>
+  <h2>Locally Stored Data</h2>
+
   <p>
-    Some technical logs may be retained for security, debugging, or legal reasons
-    for a limited period.
+    Meal entries, favorite foods, manually added foods, and related
+    nutrition information are stored locally on the user's device.
   </p>
 
   <p>
-    Developer: CalorieTracker Apps
+    Deleting the account inside the app removes this local data from
+    that device. If deletion is requested only by email, local data
+    cannot be removed remotely. The user can remove it by clearing the
+    app's storage or uninstalling CalorieTracker.
+  </p>
+
+  <h2>Data Retention</h2>
+
+  <p>
+    Account information is retained while the CalorieTracker account
+    remains active. After a valid deletion request is completed, the
+    Firebase Authentication account and account identifiers controlled
+    by the developer are deleted.
+  </p>
+
+  <p>
+    Food images submitted through Scan Food are used only to complete
+    the requested analysis. CalorieTracker does not intentionally keep
+    permanent copies of submitted food images on its own server after
+    the analysis request is completed.
+  </p>
+
+  <p>
+    Scanned barcode data and generated nutrition insights are not kept
+    as a permanent server-side history by CalorieTracker. Information
+    that the user chooses to save remains stored locally on the device.
+  </p>
+
+  <h2>Data That May Be Retained</h2>
+
+  <p>
+    Limited information may be retained only when reasonably necessary
+    for legal compliance, security, fraud or abuse prevention, or
+    dispute resolution. Any retained information will be kept only for
+    as long as necessary for that purpose.
+  </p>
+
+  <p>
+    Third-party service providers may retain limited operational or
+    security records according to their own legal obligations and
+    privacy policies.
+  </p>
+
+  <h2>Contact</h2>
+
+  <p>
+    <strong>Leon Jadrovski</strong><br>
+    Developer of CalorieTracker<br>
+    Email:
+    <a href="mailto:support.calorietracker@gmail.com">
+      support.calorietracker@gmail.com
+    </a>
+  </p>
+
+  <p class="warning">
+    Account deletion is permanent and cannot be undone.
   </p>
 </body>
 </html>
